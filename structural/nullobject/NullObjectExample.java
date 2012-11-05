@@ -1,4 +1,4 @@
-package behavioral.nullobject;
+package structural.nullobject;
 
 interface Person {
     String name();
