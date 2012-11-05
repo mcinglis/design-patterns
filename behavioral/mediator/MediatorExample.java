@@ -34,6 +34,7 @@ class Mediator {
 }
 
 abstract class Button extends JButton {
+    private static final long serialVersionUID = 1715406001575108691L;
     Mediator mediator;
     Button(String text, ActionListener l, Mediator m) {
         super(text); addActionListener(l); mediator = m;
@@ -42,6 +43,7 @@ abstract class Button extends JButton {
 }
 
 class BookButton extends Button {
+    private static final long serialVersionUID = 7807264303834716365L;
     BookButton(ActionListener l, Mediator m) {
         super("Book", l, m); mediator.btnBook = this;
     }
@@ -49,6 +51,7 @@ class BookButton extends Button {
 }
 
 class SearchButton extends Button {
+    private static final long serialVersionUID = -1573132969577513123L;
     SearchButton(ActionListener l, Mediator m) {
         super("Search", l, m); mediator.btnSearch = this;
     }
@@ -56,6 +59,7 @@ class SearchButton extends Button {
 }
 
 class ViewButton extends Button {
+    private static final long serialVersionUID = 8918760937782645284L;
     ViewButton(ActionListener l, Mediator m) {
         super("View", l, m); mediator.btnView = this;
     }
@@ -63,6 +67,7 @@ class ViewButton extends Button {
 }
 
 class DisplayLabel extends JLabel {
+    private static final long serialVersionUID = 2159933015862185920L;
     Mediator mediator;
     DisplayLabel(Mediator m) {
         super(); mediator = m; mediator.lblDisplay = this;

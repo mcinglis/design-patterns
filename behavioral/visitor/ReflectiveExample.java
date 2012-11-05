@@ -33,7 +33,7 @@ class PrinterVisitor implements Visitor {
             method.invoke(this, new Object[] { o });
         } catch (ReflectiveOperationException e) {}
     }
-    Method getMethod(Class c) {
+    Method getMethod(Class<?> c) {
         Method m = null;
         // Try the superclasses
         while (m == null && c != Object.class) {
@@ -47,8 +47,8 @@ class PrinterVisitor implements Visitor {
         }
         // Try the interfaces.
         if (c == Object.class) {
-            Class[] interfaces = c.getInterfaces();
-            for (Class i : interfaces) {
+            Class<?>[] interfaces = c.getInterfaces();
+            for (Class<?> i : interfaces) {
                 String name = i.getName();
                 name = "visit" + name.substring(name.lastIndexOf('.') + 1);
                 try {
