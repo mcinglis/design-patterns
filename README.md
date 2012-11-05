@@ -9,8 +9,8 @@ the design patterns.
 I intend to write documentation markdown files for each pattern, in future.
 
 The code is intentionally succinct; access modifiers are only declared where
-absolutely necessary, method chaining is used in lots of places, and the code
-is formatted to fit things on one line wherever reasonable.
+absolutely necessary, method chaining is abundant, and the code is formatted
+to fit things on one line wherever reasonable.
 
 This isn't how I'd write code in production.
 
