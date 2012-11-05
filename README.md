@@ -15,7 +15,7 @@ is formatted to fit things on one line whereever reasonable.
 This isn't how I'd write code in production.
 
 I started this project to revise for CSSE2003 Software Studio at the University
-of Queensland, but I fully intend to maintain it because I think it would be a
-great resource to have in future.
+of Queensland. I intend to maintain it because I think it would be a great
+resource to have in future.
 
 Contributions are very welcome!
